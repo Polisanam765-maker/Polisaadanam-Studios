@@ -6,78 +6,461 @@
   <title>POLI SAADANAM STUDIOS</title>
   <meta property="og:type" content="website">
   <meta property="og:title" content="POLI SAADANAM STUDIOS">
-  <meta property="og:description" content="പാട്ട്, വീഡിയോകൾ, റിവ്യു, ഒത്തുചേരൽ — ഒരു ഒറ്റ ലിങ്കിൽ.">
+  <meta property="og:description" content="പാട്ടുകൾ, വീഡിയോകൾ, റിവ്യൂകൾ — എല്ലാം ഒരു ലിങ്കിൽ.">
   <meta property="og:image" content="https://polisanam765-maker.github.io/Polisaadanam-Studios/album1-cover.png">
   <meta property="og:url" content="https://polisanam765-maker.github.io/Polisaadanam-Studios/">
   <style>
-    :root{--gold:#ffc400;--bg:#050505;--card:#111;--muted:#a8a8a8;--text:#f5f5f5;--line:#2d2d2d;--soft:#151515}
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;background:radial-gradient(circle at 20% 0,#392b00 0,transparent 24%),radial-gradient(circle at 100% 30%,#241000 0,transparent 26%),var(--bg);color:var(--text);font-family:Arial,"Noto Sans Malayalam",sans-serif}
-    a{text-decoration:none;color:inherit}
-    img{max-width:100%;display:block}
-    header{position:sticky;top:0;z-index:10;background:rgba(5,5,5,.88);backdrop-filter:blur(12px);border-bottom:1px solid #2d2d2d}
-    nav{max-width:1150px;margin:auto;padding:15px 18px;display:flex;justify-content:space-between;align-items:center;gap:16px}
-    .logo{font-weight:900;letter-spacing:1.5px;color:var(--gold)}
-    .logo span{color:#fff}
-    .links{display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-size:13px}
-    .links a{color:#ddd;opacity:.9}
-    .hero{max-width:1150px;margin:auto;padding:70px 18px 35px;text-align:center}
-    .tag{display:inline-block;border:1px solid #6d5600;border-radius:99px;padding:7px 12px;color:var(--gold);font-size:12px;letter-spacing:1px;text-transform:uppercase}
-    h1{font-size:clamp(44px,9vw,90px);line-height:.9;margin:18px 0 10px;text-transform:uppercase}
-    h1 span{color:var(--gold)}
-    .hero p{max-width:700px;margin:auto;color:#bbb;line-height:1.7;font-size:18px}
-    .wrap{max-width:1150px;margin:auto;padding:0 18px 30px}
-    .title{display:flex;justify-content:space-between;align-items:end;gap:16px;margin:25px 0 15px}
-    .title h2{margin:0;font-size:clamp(30px,5vw,42px)}
-    .muted{color:var(--muted);font-size:13px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-    .card{background:linear-gradient(180deg,#171717,#0d0d0d);border:1px solid #2c2c2c;border-radius:20px;overflow:hidden;box-shadow:0 15px 45px rgba(0,0,0,.25)}
-    .cover{position:relative;height:320px;overflow:hidden;background:#181818}
-    .cover img{width:100%;height:100%;object-fit:cover}
-    .body{padding:18px}
-    .body h3{margin:0 0 8px;font-size:22px}
-    .meta{color:#e7e7e7;font-size:13px}
-    .song{margin-top:16px;padding:15px;border:1px solid #2d2d2d;border-radius:15px;background:#0a0a0a}
-    .song h4{margin:0 0 8px;font-size:18px}
-    .song video{width:100%;border-radius:12px;background:#000;max-height:360px}
-    .actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}
-    .btn{border:0;border-radius:11px;padding:11px 14px;font-weight:800;cursor:pointer;background:var(--gold);color:#111}
-    .btn.dark{background:#252525;color:#fff}
-    .ratings{color:var(--gold);letter-spacing:2px}
-    .reviews{margin-top:30px}
-    .review{padding:14px;margin:10px 0;background:#151515;border:1px solid #252525;border-radius:13px}
-    .review p{margin:7px 0;line-height:1.5}
-    .review small{color:#777}
-    .admin{margin-top:30px}
-    .admin .panel{background:#101010;border:1px solid #333;border-radius:16px;padding:18px}
-    input,textarea,select{width:100%;padding:12px;background:#080808;color:#fff;border:1px solid #333;border-radius:10px;margin:7px 0 15px}
-    dialog{border:0;border-radius:18px;background:#111;color:#fff;width:min(620px,92vw);padding:0}
-    dialog::backdrop{background:rgba(0,0,0,.7)}
-    .modal{padding:22px}
-    .actions-row{display:flex;justify-content:flex-end;gap:10px}
-    .notice{margin:25px 0;padding:14px 16px;border-left:4px solid var(--gold);background:#151515;border-radius:8px;color:#bbb}
-    .share{background:#111;border:1px solid #2c2c2c;border-radius:20px;padding:18px;margin:25px 0}
-    .share h2{margin:0 0 12px}
-    .share .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
-    .share button{flex:1 1 160px;padding:13px;background:var(--gold);border:0;border-radius:12px;font-weight:800;cursor:pointer}
-    .share button.dark{background:#262626;color:#fff}
-    #shareMsg{color:var(--gold);font-size:13px;margin-top:10px;min-height:16px}
-    footer{margin-top:55px;padding:30px 18px;text-align:center;color:#777;border-top:1px solid #222}
-    .ask{position:fixed;left:12px;right:12px;bottom:14px;z-index:50;max-width:520px;margin:auto;background:#111;border:1px solid var(--gold);border-radius:18px;padding:16px;box-shadow:0 10px 40px rgba(0,0,0,.45);display:none}
-    .ask.show{display:block}
-    .ask p{margin:0;color:#ddd;line-height:1.5}
-    .ask .row{display:flex;gap:10px;margin-top:12px}
-    .ask button{flex:1;padding:12px;border-radius:12px;border:0;font-weight:800;cursor:pointer}
-    .ask .yes{background:var(--gold);color:#000}
-    .ask .no{background:#262626;color:#fff}
-    @media (max-width:650px){
-      nav{flex-direction:column;align-items:flex-start}
-      .links{gap:8px}
-      .hero{padding-top:60px}
-      .cover{height:280px}
-      .title{display:block}
-      .title .muted{display:block;margin-top:6px}
+    :root {
+      --gold: #ffc400;
+      --gold-2: #ffdb5c;
+      --bg: #050505;
+      --bg-2: #0d0d0d;
+      --card: #141414;
+      --panel: #171717;
+      --soft: #1f1f1f;
+      --text: #f5f5f5;
+      --muted: #a8a8a8;
+      --line: #2b2b2b;
+      --shadow: rgba(0,0,0,.42);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 18% 0%, rgba(93, 68, 0, .35), transparent 28%),
+        radial-gradient(circle at 100% 20%, rgba(82, 44, 0, .28), transparent 20%),
+        var(--bg);
+      color: var(--text);
+      font-family: Arial, "Noto Sans Malayalam", sans-serif;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img, video { max-width: 100%; display: block; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(5, 5, 5, .8);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+
+    nav {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .logo {
+      font-size: clamp(1rem, 1.6vw, 1.5rem);
+      font-weight: 900;
+      letter-spacing: 1.8px;
+      color: var(--gold);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .logo span { color: #fff; }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 13px;
+      color: #ddd;
+    }
+
+    .links a {
+      opacity: .86;
+      transition: opacity .2s ease;
+    }
+
+    .links a:hover { opacity: 1; }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 18px 28px;
+    }
+
+    .hero {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 72px 18px 28px;
+      text-align: center;
+    }
+
+    .tag {
+      display: inline-block;
+      border: 1px solid rgba(255, 196, 0, .7);
+      background: rgba(255, 196, 0, .04);
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 20px 0 10px;
+      font-size: clamp(2.8rem, 9vw, 6.2rem);
+      line-height: .9;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    h1 span { color: var(--gold); }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      line-height: 1.7;
+      color: #d0d0d0;
+      font-size: clamp(1rem, 2vw, 1.2rem);
+    }
+
+    .title {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      margin: 30px 0 18px;
+    }
+
+    .title h2 {
+      margin: 0;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+    }
+
+    .muted { color: var(--muted); font-size: 13px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(0,0,0,.12));
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 15px 32px var(--shadow);
+    }
+
+    .cover {
+      position: relative;
+      height: 330px;
+      overflow: hidden;
+      background: #151515;
+    }
+
+    .cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .35s ease;
+    }
+
+    .card:hover .cover img { transform: scale(1.04); }
+
+    .body {
+      padding: 18px 18px 20px;
+    }
+
+    .body h3 {
+      margin: 0 0 8px;
+      font-size: clamp(1.3rem, 2vw, 1.8rem);
+    }
+
+    .meta {
+      color: #d6d6d6;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .song {
+      margin-top: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.02);
+      border-radius: 16px;
+      padding: 14px;
+    }
+
+    .song h4 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .song video {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      background: #000;
+      max-height: 360px;
+      border: 1px solid rgba(255,255,255,.03);
+    }
+
+    .actions {
+      margin-top: 12px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: 0;
+      border-radius: 12px;
+      padding: 12px 14px;
+      font-weight: 800;
+      cursor: pointer;
+      background: var(--gold);
+      color: #111;
+      transition: transform .18s ease, filter .18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.08);
+    }
+
+    .btn.dark {
+      background: #2a2a2a;
+      color: #fff;
+    }
+
+    .ratings {
+      color: var(--gold-2);
+      letter-spacing: 2px;
+    }
+
+    .review-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .review {
+      background: rgba(255,255,255,.02);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 15px;
+    }
+
+    .review-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .review p {
+      margin: 8px 0;
+      line-height: 1.6;
+      color: #e5e5e5;
+    }
+
+    .review small {
+      color: #7e7e7e;
+    }
+
+    .notice {
+      margin: 28px 0 12px;
+      background: rgba(255, 196, 0, .05);
+      border-left: 4px solid var(--gold);
+      border-radius: 10px;
+      padding: 14px 16px;
+      color: #d9d9d9;
+      line-height: 1.6;
+    }
+
+    .share {
+      background: rgba(255,255,255,.02);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 18px;
+      margin: 26px 0 10px;
+    }
+
+    .share h2 { margin: 0 0 12px; }
+
+    .share .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .share button {
+      flex: 1 1 160px;
+      padding: 13px 12px;
+      background: var(--gold);
+      border: 0;
+      border-radius: 12px;
+      font-weight: 800;
+      cursor: pointer;
+      color: #111;
+    }
+
+    .share button.dark {
+      background: #262626;
+      color: #fff;
+    }
+
+    #shareMsg {
+      margin-top: 12px;
+      color: var(--gold);
+      min-height: 20px;
+      font-size: 13px;
+    }
+
+    .admin {
+      margin-top: 30px;
+    }
+
+    .panel {
+      background: rgba(255,255,255,.02);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .panel p {
+      margin: 0 0 14px;
+      line-height: 1.7;
+      color: #d7d7d7;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px 14px;
+      margin: 8px 0 16px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: rgba(0,0,0,.28);
+      color: #fff;
+      font: inherit;
+    }
+
+    textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    dialog {
+      border: 0;
+      border-radius: 20px;
+      width: min(620px, 92vw);
+      background: #111;
+      color: var(--text);
+      padding: 0;
+      box-shadow: 0 25px 60px rgba(0,0,0,.6);
+    }
+
+    dialog::backdrop {
+      background: rgba(0,0,0,.7);
+    }
+
+    .modal {
+      padding: 22px;
+    }
+
+    .actions-row {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    footer {
+      margin-top: 52px;
+      padding: 30px 18px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,.06);
+      color: #7a7a7a;
+    }
+
+    .ask {
+      position: fixed;
+      left: 12px;
+      right: 12px;
+      bottom: 14px;
+      z-index: 50;
+      max-width: 520px;
+      margin: 0 auto;
+      background: rgba(17,17,17,.96);
+      border: 1px solid rgba(255,196,0,.7);
+      border-radius: 18px;
+      padding: 16px;
+      box-shadow: 0 12px 40px rgba(0,0,0,.5);
+      display: none;
+    }
+
+    .ask.show { display: block; }
+
+    .ask p {
+      margin: 0;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    .ask .row {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .ask button {
+      flex: 1 1 0;
+      padding: 12px;
+      border: 0;
+      border-radius: 12px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .ask .yes {
+      background: var(--gold);
+      color: #111;
+    }
+
+    .ask .no {
+      background: #2a2a2a;
+      color: #fff;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .links {
+        justify-content: flex-start;
+      }
+
+      .title {
+        display: block;
+      }
+
+      .title .muted {
+        display: inline-block;
+        margin-top: 6px;
+      }
+
+      .cover { height: 280px; }
     }
   </style>
 </head>
@@ -95,12 +478,12 @@
   </header>
 
   <section class="hero">
-    <span class="tag">🎵 MUSIC • REVIEWS • POLI VIBE</span>
+    <span class="tag">🎵 Music • Reviews • Poli Vibe</span>
     <h1>POLI SAADANAM<br><span>STUDIOS</span></h1>
-    <p>പാട്ട് കേൾക്കൂ • വീഡിയോകൾ കാണൂ • അഭിപ്രായം നൽകൂ — എല്ലാം ഒരൊറ്റ ലിങ്കിൽ.</p>
+    <p>പാട്ട് കേൾക്കൂ • വീഡിയോകൾ കാണൂ • റേറ്റിംഗ്, റിവ്യൂ എന്നിവ ചേർക്കൂ — എല്ലാം ഒരൊറ്റ ലിങ്കിൽ.</p>
   </section>
 
-  <main class="wrap">
+  <main class="container">
     <section id="albums">
       <div class="title">
         <h2>🔥 Albums</h2>
@@ -113,6 +496,7 @@
           <div class="body">
             <h3>മല്ല പുല്ല പോലെയാ</h3>
             <div class="meta">Album 01 • POLI SAADANAM STUDIOS</div>
+
             <div class="song">
               <h4>🎶 First Song</h4>
               <div class="meta">First Song</div>
@@ -120,9 +504,10 @@
                 <source src="commission-shiguttan.mp4" type="video/mp4">
               </video>
               <div class="actions">
-                <button class="btn" onclick="openReview('മല്ല പുല്ല പോലെയാ','First Song')">Rate & Review</button>
+                <button class="btn" type="button" onclick="openReview('മല്ല പുല്ല പോലെയാ','First Song')">Rate & Review</button>
               </div>
             </div>
+
             <div class="song">
               <h4>🎶 Second Song</h4>
               <div class="meta">Second Song</div>
@@ -130,7 +515,7 @@
                 <source src="album1-song2.mp4" type="video/mp4">
               </video>
               <div class="actions">
-                <button class="btn" onclick="openReview('മല്ല പുല്ല പോലെയാ','Second Song')">Rate & Review</button>
+                <button class="btn" type="button" onclick="openReview('മല്ല പുല്ല പോലെയാ','Second Song')">Rate & Review</button>
               </div>
             </div>
           </div>
@@ -141,6 +526,7 @@
           <div class="body">
             <h3>അരിക്കൊമ്പനും ഹംസയും</h3>
             <div class="meta">Album 02 • Hamsa Creations</div>
+
             <div class="song">
               <h4>🎶 First Song</h4>
               <div class="meta">Launch Ad / Video</div>
@@ -148,7 +534,7 @@
                 <source src="mattul-kadappuratte-hamsa.mp4" type="video/mp4">
               </video>
               <div class="actions">
-                <button class="btn" onclick="openReview('അരിക്കൊമ്പനും ഹംസയും','First Song')">Rate & Review</button>
+                <button class="btn" type="button" onclick="openReview('അരിക്കൊമ്പനും ഹംസയും','First Song')">Rate & Review</button>
               </div>
             </div>
           </div>
@@ -159,6 +545,7 @@
           <div class="body">
             <h3>അസീം ഇക്കാന്റെ കദീജ ബിബി</h3>
             <div class="meta">Album 03 • സുസ്ബേറിയൻ മ്യൂസിക്</div>
+
             <div class="song">
               <h4>🎶 First Song</h4>
               <div class="meta">First Song</div>
@@ -166,7 +553,7 @@
                 <source src="album3-song.mp4" type="video/mp4">
               </video>
               <div class="actions">
-                <button class="btn" onclick="openReview('അസീം ഇക്കാന്റെ കദീജ ബിബി','First Song')">Rate & Review</button>
+                <button class="btn" type="button" onclick="openReview('അസീം ഇക്കാന്റെ കദീജ ബിബി','First Song')">Rate & Review</button>
               </div>
             </div>
           </div>
@@ -177,6 +564,7 @@
           <div class="body">
             <h3>രസഗുണ്ണ</h3>
             <div class="meta">Album 04 • രാഹുൽ, മാഷ്, പൈതൃം</div>
+
             <div class="song">
               <h4>🎶 Music Album</h4>
               <div class="meta">Music Album</div>
@@ -184,7 +572,7 @@
                 <source src="album4-song.mp4" type="video/mp4">
               </video>
               <div class="actions">
-                <button class="btn" onclick="openReview('രസഗുണ്ണ','Music Album')">Rate & Review</button>
+                <button class="btn" type="button" onclick="openReview('രസഗുണ്ണ','Music Album')">Rate & Review</button>
               </div>
             </div>
           </div>
@@ -208,16 +596,16 @@
       <h2>📤 Share</h2>
       <div class="muted">കൂട്ടുകാരെ ലിങ്ക് അയക്കൂ, പാട്ട് കേട്ട് അഭിപ്രായം പറഞ്ഞോളൂ.</div>
       <div class="row">
-        <button class="dark" onclick="shareWA()">WhatsApp</button>
-        <button onclick="copyMsg()">Message + link copy</button>
-        <button onclick="copyLink('')">Site link copy</button>
-        <button onclick="copyLink('#reviews')">Reviews link copy</button>
+        <button class="dark" type="button" onclick="shareWA()">WhatsApp</button>
+        <button type="button" onclick="copyMsg()">Message + link copy</button>
+        <button type="button" onclick="copyLink('')">Site link copy</button>
+        <button type="button" onclick="copyLink('#reviews')">Reviews link copy</button>
       </div>
       <div id="shareMsg"></div>
     </section>
 
     <div class="notice">
-      <b>POLI SAADANAM</b> — ഇവിടെ കേട്ടിട്ട് അഭിപ്രായം പറയാം. നിങ്ങളുടെ റേറ്റിംഗ്, റിവ്യൂ എന്നിവ ബ്രൗസറിൽ ആർക്കും save ചെയ്യാം.
+      <b>POLI SAADANAM</b> — ഇവിടെ കേട്ടിട്ട് അഭിപ്രായം പറയാം. നിങ്ങളുടെ റേറ്റിംഗ്, റിവ്യൂ എന്നിവ ബ്രൗസറിൽ save ചെയ്യാം.
     </div>
 
     <section id="reviews" class="reviews">
@@ -225,7 +613,7 @@
         <h2>⭐ Audience Reviews</h2>
         <span class="muted" id="reviewCount"></span>
       </div>
-      <div id="reviewList"></div>
+      <div id="reviewList" class="review-list"></div>
     </section>
 
     <section id="admin" class="admin">
@@ -235,7 +623,7 @@
       </div>
       <div class="panel">
         <p class="muted">ഈ വെർസിയിലേത് albums/songs fixed ആണ്. Reviews browser local storage-ൽ സൂക്ഷിക്കുന്നു. ഒരു admin login ഇല്ല; ഇവിടെ demo controls മാത്രം.</p>
-        <button class="btn dark" onclick="clearReviews()">Clear Demo Reviews</button>
+        <button class="btn dark" type="button" onclick="clearReviews()">Clear Demo Reviews</button>
       </div>
     </section>
   </main>
@@ -245,8 +633,8 @@
   <div class="ask" id="ask">
     <p><b>🔥 പാട്ട് ഇഷ്ടപ്പെട്ടോ?</b><br><span id="askSong"></span> — നിങ്ങളുടെ റേറ്റിംഗ്, അഭിപ്രായം ഇവിടെ ചേർക്കാം.</p>
     <div class="row">
-      <button class="yes" id="askYes">Yes</button>
-      <button class="no" id="askNo">No</button>
+      <button class="yes" id="askYes" type="button">Yes</button>
+      <button class="no" id="askNo" type="button">No</button>
     </div>
   </div>
 
@@ -286,7 +674,7 @@
       current = { album, song };
       document.getElementById('reviewTitle').textContent = '⭐ ' + song + ' — Review';
       document.getElementById('reviewForm').reset();
-      reviewDialog.showModal();
+      if (typeof reviewDialog !== 'undefined') reviewDialog.showModal();
     }
 
     document.getElementById('reviewForm').addEventListener('submit', function (e) {
@@ -294,6 +682,7 @@
       const name = document.getElementById('name').value.trim();
       const stars = Number(document.getElementById('stars').value);
       const comment = document.getElementById('comment').value.trim();
+
       if (!name || !comment) return;
 
       reviews.push({
@@ -321,20 +710,23 @@
     }
 
     function renderReviews() {
-      const count = document.getElementById('reviewCount');
-      const list = document.getElementById('reviewList');
-      count.textContent = reviews.length + ' review' + (reviews.length === 1 ? '' : 's');
+      const countEl = document.getElementById('reviewCount');
+      const listEl = document.getElementById('reviewList');
+
+      countEl.textContent = reviews.length + ' review' + (reviews.length === 1 ? '' : 's');
 
       if (!reviews.length) {
-        list.innerHTML = '<p class="muted">No reviews yet.</p>';
+        listEl.innerHTML = '<p class="muted">No reviews yet.</p>';
         return;
       }
 
-      list.innerHTML = reviews.slice().reverse().map(r => `
+      listEl.innerHTML = reviews.slice().reverse().map(r => `
         <div class="review">
-          <b>${esc(r.name)}</b>
-          <span class="ratings">${'★'.repeat(r.stars)}${'☆'.repeat(5-r.stars)}</span>
-          <small> • ${esc(r.album)} • ${esc(r.song)}</small>
+          <div class="review-head">
+            <b>${esc(r.name)}</b>
+            <span class="ratings">${'★'.repeat(r.stars)}${'☆'.repeat(5 - r.stars)}</span>
+          </div>
+          <small>${esc(r.album)} • ${esc(r.song)}</small>
           <p>${esc(r.comment)}</p>
           <small>${esc(r.date)}</small>
         </div>
@@ -350,7 +742,6 @@
 
     document.getElementById('adminLink').addEventListener('click', function (e) {
       e.preventDefault();
-      document.getElementById('admin').classList.toggle('show');
       document.getElementById('admin').scrollIntoView({ behavior: 'smooth' });
     });
 
@@ -358,25 +749,28 @@
 
     (function () {
       const ask = document.getElementById('ask');
-      let cur = null;
       const shown = new Set();
+      let cur = null;
 
-      function show(v) {
-        const card = v.closest('.card');
+      function showPrompt(video) {
+        const card = video.closest('.card');
         if (!card) return;
+
         const song = card.querySelector('.song h4')?.textContent.replace('🎶', '').trim();
         const album = card.querySelector('h3')?.textContent.trim();
+
         if (!song || shown.has(song)) return;
+
         shown.add(song);
         cur = { album, song };
         document.getElementById('askSong').textContent = song;
         ask.classList.add('show');
       }
 
-      document.querySelectorAll('video').forEach(v => {
-        v.addEventListener('ended', () => show(v));
-        v.addEventListener('timeupdate', () => {
-          if (v.duration && v.currentTime > v.duration * 0.6) show(v);
+      document.querySelectorAll('video').forEach(video => {
+        video.addEventListener('ended', () => showPrompt(video));
+        video.addEventListener('timeupdate', () => {
+          if (video.duration && video.currentTime > video.duration * 0.6) showPrompt(video);
         });
       });
 
@@ -404,29 +798,27 @@
 
     function copyMsg() {
       const text = MSG + base();
-      const m = document.getElementById('shareMsg');
+      const out = document.getElementById('shareMsg');
+
       if (navigator.clipboard) {
-        navigator.clipboard.writeText(text).then(() => {
-          m.textContent = '✅ Message + link copied';
-        }).catch(() => {
-          m.textContent = text;
-        });
+        navigator.clipboard.writeText(text)
+          .then(() => { out.textContent = '✅ Message + link copied'; })
+          .catch(() => { out.textContent = text; });
       } else {
-        m.textContent = text;
+        out.textContent = text;
       }
     }
 
     function copyLink(h) {
       const url = base() + h;
-      const m = document.getElementById('shareMsg');
+      const out = document.getElementById('shareMsg');
+
       if (navigator.clipboard) {
-        navigator.clipboard.writeText(url).then(() => {
-          m.textContent = '✅ Copy succeeded: ' + url;
-        }).catch(() => {
-          m.textContent = url;
-        });
+        navigator.clipboard.writeText(url)
+          .then(() => { out.textContent = '✅ Copy succeeded: ' + url; })
+          .catch(() => { out.textContent = url; });
       } else {
-        m.textContent = url;
+        out.textContent = url;
       }
     }
   </script>
